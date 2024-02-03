@@ -13,12 +13,13 @@ View original and converted images side by side.
 1. Clone the repository 
 ### `git clone https://github.com/your-username/your-repository.git`
 
-### `npm install`
 2. Install dependencies
+### `npm install`
 
-### `npm start`
 3. Start the development server:
 Open your browser and visit http://localhost:3000 to use the application
+### `npm start`
+
 
 ## How to Use
 1. Click on the "Choose File" button and select a JPEG or PNG image.
