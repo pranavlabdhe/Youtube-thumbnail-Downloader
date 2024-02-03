@@ -6,10 +6,13 @@ const ImageToWebp = () => {
   const wiImageRef = useRef(null);
 
   const convertImage = (e) => {
+    console.log(e)
     if (e.target.files.length > 0) {
-      const src = URL.createObjectURL(e.target.files[0]);
-      uiImageRef.current.src = src;
-      
+        const file = e.target.files[0];
+        if(validFileType(file)) {
+            const src = URL.createObjectURL(file)
+            uiImageRef.current.src = src;
+            
       let canvas = document.createElement('canvas')
       let ctx = canvas.getContext("2d")
       let userImage = new Image();
@@ -31,15 +34,24 @@ const ImageToWebp = () => {
             downloadLink.click();
             document.body.removeChild(downloadLink);
         }
-
+    }
+    else {
+        alert('Please upload valid JPG or PNG file')
+        e.target.value = null
     }
   };
+  }
 
+    //   function to check file type is valid (JPEG or PNG)
+    const validFileType = (file) => {
+        const allowedTypes = ['image/jpeg', 'image/png'];
+        return allowedTypes.includes(file.type)
+    }
   return (
     <div>
       <h1 className='text-center m-3'>Convert JPG/PNG images to Webp format</h1>
       <div className='choose_image'>
-      <input type='file' accept='image/' name='convert' id='userImage' onChange={convertImage} className='file_cursor mt-3' />
+      <input type='file' accept='image/png , image/jpeg' name='convert' id='userImage' onChange={convertImage} className='file_cursor mt-3' />
       </div>
       <h1 className='title text-center mt-3'>Upload an Image</h1>
     
