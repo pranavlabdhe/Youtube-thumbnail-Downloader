@@ -31,3 +31,7 @@ Open your browser and visit http://localhost:3000 to use the application
 1. React
 2. HTML5
 3. CSS3
+
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
