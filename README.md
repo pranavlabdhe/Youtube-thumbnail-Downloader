@@ -13,14 +13,11 @@ View original and converted images side by side.
 1. Clone the repository 
 ### `git clone https://github.com/your-username/your-repository.git`
 
+### `npm install`
 2. Install dependencies
 
-3. Start the development server:
-### `npm install`
-
-
 ### `npm start`
-
+3. Start the development server:
 Open your browser and visit http://localhost:3000 to use the application
 
 ## How to Use
