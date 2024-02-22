@@ -24,6 +24,17 @@
 .images_div{
   padding: 20px;
 }
+
+.image_details {
+  display:flex;
+  justify-content: space-between;
+}
+.radio_check {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 @media screen and (max-width:600px) {
   #WiImage,#UiImage {
     position: relative;
