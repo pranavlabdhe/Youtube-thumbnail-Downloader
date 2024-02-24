@@ -34,7 +34,17 @@
   width: 100%;
   justify-content: space-between;
 }
-
+.list_bottom_border {
+  border-bottom: 1px solid #DADADC;
+  cursor: pointer;
+}
+.support_btn {
+  gap: 18px;
+}
+.outline_support {
+  border: 1px solid black;
+  color: black;
+}
 @media screen and (max-width:600px) {
   #WiImage,#UiImage {
     position: relative;
