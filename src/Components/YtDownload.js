@@ -494,8 +494,10 @@ const YtDownload = () => {
         <div className="ol-12 col-sm-6 col-md-6 col-lg-6"> 
           {/* <p className="footer_text m-0 mt-5">{lang[langKey].websitename}</p> */}
           <div className="mt-2"><img src="images/logo.svg" /></div>
-          <a href="mailto:someone@example.com" className="assestive pb-4 text-decoration-none">
-          <img src="images/email.svg" className="me-3"/>{lang[langKey].webSiteEmail}</a>
+          {/* <a href="mailto:someone@example.com" className="assestive pb-4 text-decoration-none">
+          <img src="images/email.svg" className="me-3"/>{lang[langKey].webSiteEmail}</a> */}
+              <a href="mailto:someone@example.com" className="assestive pb-4 text-decoration-none">
+          <img src="images/email.svg" className="me-3"/>labdhepranav@gmail.com</a>
           <div className="love_india">
           <img src="images/love_india.svg" className="love_india" alt="made with love in india" />
           </div>
@@ -505,9 +507,10 @@ const YtDownload = () => {
 
         </div>
         <div className="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-end footer_margin">
-          <a href="#" target="_blank" className="links" ><p className="extra_small">{lang[langKey].rights}</p> </a>
-          <a href="#" target="_blank" className="links"> <p className="extra_small">{lang[langKey].termAndCon}</p></a> 
-          <a href="#" target="_blank" className="links"><p className="extra_small">{lang[langKey].privacy}</p></a>  
+          {/* <a href="#" target="_blank" className="links" ><p className="extra_small">{lang[langKey].rights}</p> </a> */}
+          <a href="#" target="_blank" className="links" ><p className="extra_small">All rights reserved © 2024 Pranav Labdhe</p> </a>
+          {/* <a href="#" target="_blank" className="links"> <p className="extra_small">{lang[langKey].termAndCon}</p></a> 
+          <a href="#" target="_blank" className="links"><p className="extra_small">{lang[langKey].privacy}</p></a>   */}
         </div>
         
         </div>
