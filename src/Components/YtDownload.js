@@ -64,22 +64,22 @@ const YtDownload = () => {
   const handleDownloadClick = async () => {
     try {
       const thumbnailResponseHQ = await axios.get(
-        `http://localhost:3001/fetch-thumbnail?videoId=${videoId}&quality=hqdefault`,
+        `https://youtube-thumbnail-downloader-backend.onrender.com/fetch-thumbnail?videoId=${videoId}&quality=hqdefault`,
         { responseType: "json" }
       );
 
       const thumbnailResponseMQ = await axios.get(
-        `http://localhost:3001/fetch-thumbnail?videoId=${videoId}&quality=mqdefault`,
+        `https://youtube-thumbnail-downloader-backend.onrender.com/fetch-thumbnail?videoId=${videoId}&quality=mqdefault`,
         { responseType: "json" }
       );
 
       const thumbnailResponseSD = await axios.get(
-        `http://localhost:3001/fetch-thumbnail?videoId=${videoId}&quality=sddefault`,
+        `https://youtube-thumbnail-downloader-backend.onrender.com/fetch-thumbnail?videoId=${videoId}&quality=sddefault`,
         { responseType: "json" }
       );
 
       const thumbnailResponseMaxRes = await axios.get(
-        `http://localhost:3001/fetch-thumbnail?videoId=${videoId}&quality=maxresdefault`,
+        `https://youtube-thumbnail-downloader-backend.onrender.com/fetch-thumbnail?videoId=${videoId}&quality=maxresdefault`,
         { responseType: "json" }
       );
 
@@ -110,7 +110,7 @@ const YtDownload = () => {
       if (error.response && error.response.status === 500) {
         var maxres1 = "maxres1";
         const thumbnailResponseMaxRes = await axios.get(
-          `http://localhost:3001/fetch-thumbnail?videoId=${videoId}&quality=${maxres1}`,
+          `https://youtube-thumbnail-downloader-backend.onrender.com/fetch-thumbnail?videoId=${videoId}&quality=${maxres1}`,
           { responseType: "json" }
         );
         setThumbNailUrls([
@@ -278,7 +278,7 @@ const YtDownload = () => {
           <Modal.Title>Was this helpful?</Modal.Title>
 
         </Modal.Header>
-        <p className="support_tag_line ms-4 mt-4">Help us grow by sharing the link with your friends</p>
+        <p className="support_tag_line ms-4 mt-4">Help grow by sharing the link with your friends</p>
         <Modal.Body className="body_padding">
           <Form.Control
             size="lg"
