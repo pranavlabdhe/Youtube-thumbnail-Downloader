@@ -348,6 +348,10 @@ color: black;
 .links {
   text-decoration: none;
 }
+.alert {
+  padding: 0px;
+  text-align: center;
+} 
 @media screen and (max-width:600px) {
   #WiImage,#UiImage {
     position: relative;

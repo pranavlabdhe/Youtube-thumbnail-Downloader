@@ -37,7 +37,7 @@ const YtDownload = () => {
     navigator.clipboard.writeText(copyText.value);
     setCopyAlert(true)
     setTimeout(()=>{
-      // setCopyAlert(false)
+      setCopyAlert(false)
     },2000)
     // alert("Copied the text: " + copyText.value);
   };
@@ -153,8 +153,9 @@ const YtDownload = () => {
       <nav className="navbar navbar-expand-lg navbar_background">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
-    <img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_640.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
-     <span className="logo ms-4">Company name</span> 
+    {/* <img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_640.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/> */}
+     {/* <span className="logo ms-4">iyoutubethumnail</span>  */}
+     <img src="images/logo.svg" />
       </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -344,7 +345,7 @@ const YtDownload = () => {
     </div>
  
 
- <div className="col-12 d-flex justify-content-center margin_100">
+ {/* <div className="col-12 d-flex justify-content-center margin_100">
   <div className="col-12 col-sm-8 col-md-8 col-lg-8">
     <p className="faq_text">{lang[langKey].faqs}</p>
     <div class="accordion mt-5 accordion-flush" id="accordionExample">
@@ -484,14 +485,15 @@ const YtDownload = () => {
   </div>
 </div>
 </div>
-</div>
+</div> */}
 </div>
 
    
   <div className="footer_bg col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
     <div className="d-flex col-8 justify-content-between mobile_footer align-items-end">
         <div className="ol-12 col-sm-6 col-md-6 col-lg-6"> 
-          <p className="footer_text m-0 mt-5">{lang[langKey].websitename}</p>
+          {/* <p className="footer_text m-0 mt-5">{lang[langKey].websitename}</p> */}
+          <div className="mt-2"><img src="images/logo.svg" /></div>
           <a href="mailto:someone@example.com" className="assestive pb-4 text-decoration-none">
           <img src="images/email.svg" className="me-3"/>{lang[langKey].webSiteEmail}</a>
           <div className="love_india">
